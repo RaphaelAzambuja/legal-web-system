@@ -1,14 +1,59 @@
+:ROOT{
+    --color-60: #005A6F;
+    --color-30: #C202CC;
+    --color-10: #5F1E88;
+}
+
 body{
     margin: 0;
 }
 
-.content-box{
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(-60deg,#A701B0, #A701B0, #005A6F, #005A6F, #005A6F);
+.main-box{
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translatey(20%);
+}
+
+.content-box{
+    width: 80rem;
+    height: 30rem;
+    background: linear-gradient(-60deg, var(--color-30), var(--color-30), var(--color-60), var(--color-60), var(--color-60));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.mendes-box{
+    text-shadow: 0px 0px 20px #ffffff;
+}
+
+.header-box{
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #005A6F;
+}
+
+.footer-box{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #005A6F;
+}
+
+.content-footer{
+
+}
+
+.img-logo{
+    width: 50px;
 }
 
 .left-box{
@@ -21,7 +66,7 @@ body{
 }
 
 .left-box > h1{
-    font-size: 3vw;
+    font-size: 2.5rem; /*rem é o padrão para medição */
     color: #ffffff;
 }
 
@@ -40,7 +85,7 @@ body{
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: #403888;
+    background: var(--color-10);
     border-radius: 20px;
     box-shadow: 0px 10px 60px #000000;
 }
@@ -59,7 +104,7 @@ body{
     border: none;
     border-bottom: 2px solid #ffffff;
     padding: 10px;  
-    background: #403888;
+    background: var(--color-10);
     color: #ffffff;
     font-size: 12pt;
     box-sizing: border-box;
@@ -73,14 +118,14 @@ body{
 
 .login-button{
     width: 100%;
-    padding: 15px 0px;
-    margin: 20px;
+    padding: 1rem 5rem;
+    margin-top: 2rem;
     border: none;
     border-radius: 10pt;
     outline: none;
     font-weight: 800;
     letter-spacing: 1pt;
-    color: #403888;
+    color: var(--color-10);
     background: #ffffff;
     cursor: pointer;
     box-shadow: 0px 10px 50px -12px #ffffff;

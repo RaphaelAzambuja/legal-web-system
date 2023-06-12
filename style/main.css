@@ -1,0 +1,27 @@
+:ROOT{
+    --color-60: #005A6F;
+    --color-30: #C202CC;
+    --color-10: #5F1E88;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-box, .nav-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-box{
+    background-color: #005A6F;
+}
+
+
+
+.img-logo{
+    width: 50px;
+}

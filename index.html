@@ -5,22 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="./midia/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/style.css">
+        <link rel="shortcut icon" href="./midia/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="style/style.css">
     <title>LegalWebSystem</title>
 </head>
 <body>
+    <header class="header-box">
+        <div class="logo-header">
+            <img src="../midia/logo-title.jpeg" class="img-logo">
+        </div>
+    </header>
+
     <div class="main-box">
         <div class="content-box">
     
             <div class="left-box">
-                <h1>Mendes Beckhauser <br> Advocacia & Consultoria</h1>             
+                <h1><div class="mendes-box">Mendes Beckhauser</div> Advocacia & Consultoria</h1>             
             </div>        
             
             <div class="right-box">     
-                
                 <div class="login-box">
-                    
                     <div class="text-box">
                         <label for="user">Usuário</label>
                         <input type="text" name="user">
@@ -31,10 +35,19 @@
                         <input type="password" name="password">
                     </div>
                     
-                    <button class="login-button">ENTRAR </button>               
+                    <a href="./html/main.html"><button type="button" class="login-button">ENTRAR</button></a>               
                 </div>
-            </div>          
+            </div>
+
         </div>
     </div>
+
+    <footer class="footer-box">
+        <div class="content-footer">
+            <div>
+                <p>© 2023 Mendes Beckhauser, Inc.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
