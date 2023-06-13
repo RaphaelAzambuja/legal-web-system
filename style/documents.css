@@ -20,7 +20,6 @@
 }
 
 .footer-box{
-    margin-top: 20%;
     bottom: 0%;
     width: 100%;
     display: flex;
@@ -59,38 +58,6 @@
 }
 
 .content-box{
-    margin: 10%;
-    width: 80%;
-    height: 30rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-}
-
-.left-box{
-    width: 30vw;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.right-box{
-    width: 30vw;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.text-box{
-    
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 10px;
+    height:60rem;
 }
