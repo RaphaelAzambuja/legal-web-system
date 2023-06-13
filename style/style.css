@@ -38,20 +38,6 @@ body{
     background-color: #005A6F;
 }
 
-.footer-box{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #005A6F;
-}
-
-.content-footer{
-
-}
-
 .img-logo{
     width: 50px;
 }
