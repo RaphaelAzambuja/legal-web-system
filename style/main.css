@@ -1,284 +1,199 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    height: 100%;
-    min-height: 100%;
+  height: 100%;
+  min-height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 footer {
-    margin-top: auto;
+  margin-top: auto;
+}
+
+/* CONTENT-BOX ============================================================================================================== */
+
+.content-box{
+  width: 100%;
+  height: 100%;
+  border: solid #005A6F;
+  margin-top: 5rem;
+  padding: 1.5rem;
+}
+
+/* CONTENT-HEADER-BOX ================================================================================================================= */
+
+.top-header-box{
+  width: 100%;
+  height: auto;
+  border: none;
+  border-bottom: solid #005A6F;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+
+.right-box{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.input{
+  height: 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+}
+
+.search-box{
+  padding: 0.6rem;
+  border: solid .1rem #005A6F;
 }
 
 
-/* button ======================================================================================================== */
-button {
-    
-    font-weight: bold;
-    color: white;
-    background-color: #25282A;
-    padding: 0rem 2.2rem 0rem 1rem;
-    border: none;
-    border-radius: .6rem;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-  }
-  
-  button span:not(:nth-child(6)) {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 30px;
-    width: 30px;
-    background-color: #0c66ed;
-    border-radius: 50%;
-    transition: .6s ease;
-  }
-  
-  button span:nth-child(6) {
-    position: relative;
-  }
-  
-  button span:nth-child(1) {
-    transform: translate(-3.3em, -4em);
-  }
-  
-  button span:nth-child(2) {
-    transform: translate(-6em, 1.3em);
-  }
-  
-  button span:nth-child(3) {
-    transform: translate(-.2em, 1.8em);
-  }
-  
-  button span:nth-child(4) {
-    transform: translate(3.5em, 1.4em);
-  }
-  
-  button span:nth-child(5) {
-    transform: translate(3.5em, -3.8em);
-  }
-  
-  button:hover span:not(:nth-child(6)) {
-    transform: translate(-50%, -50%) scale(4);
-    transition: 1.5s ease;
-  }     
 
 
-  /* LIST-BOX ================================================================================================== */
-
-  .content-box{
-    width: 100%;
-    height: 100%;
-    border: solid;
-  }
-
-  button {
-    padding: 10px 40px;
-    font-size: 18px;
-    background-color: #008542;
-    color: #fff;
-    text-shadow: 0 2px 0 rgb(0 0 0 / 25%);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border: 0;
-    z-index: 1;
-    user-select: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    white-space: unset;
-    padding: .8rem 1.5rem;
-    text-decoration: none;
-    font-weight: 900;
-    transition: all 0.7s cubic-bezier(0,.8,.26,.99);
-   }
-   
-   button:before {
-    position: absolute;
-    pointer-events: none;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    content: '';
-    transition: .7s cubic-bezier(0,.8,.26,.99);
-    z-index: -1;
-    background-color: #008542!important;
-    box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
-   }
-   
-   button:after {
-    position: absolute;
-    pointer-events: none;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    content: '';
-    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
-    transition: .7s cubic-bezier(0,.8,.26,.99);
-   }
-   
-   button:hover:before {
-    box-shadow: 0 -4px rgb(0 0 0 / 50%) inset, 0 4px rgb(255 255 255 / 20%) inset, -4px 0 rgb(255 255 255 / 20%) inset, 4px 0 rgb(0 0 0 / 50%) inset;
-   }
-   
-   button:hover:after {
-    box-shadow: 0 4px 0 0 rgb(0 0 0 / 15%);
-   }
-   
-   button:active {
-    transform: translateY(4px);
-   }
-   
-   button:active:after {
-    box-shadow: 0 0px 0 0 rgb(0 0 0 / 15%);
-   }    
+  /* LIST-BOX ================================================================================================================= */
 
 
-   /*MODAL FORM ==========================================================================================*/
-   .form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 350px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    position: relative;
+
+  /*MODAL FORM ==========================================================================================*/
+  .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.title {
+  font-size: 28px;
+  color: royalblue;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before,.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: royalblue;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: royalblue;
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: royalblue;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.form label {
+  position: relative;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: green;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+}
+
+.submit:hover {
+  background-color: rgb(56, 90, 194);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
   }
-  
-  .title {
-    font-size: 28px;
-    color: royalblue;
-    font-weight: 600;
-    letter-spacing: -1px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
   }
-  
-  .title::before,.title::after {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    left: 0px;
-    background-color: royalblue;
-  }
-  
-  .title::before {
-    width: 18px;
-    height: 18px;
-    background-color: royalblue;
-  }
-  
-  .title::after {
-    width: 18px;
-    height: 18px;
-    animation: pulse 1s linear infinite;
-  }
-  
-  .message, .signin {
-    color: rgba(88, 87, 87, 0.822);
-    font-size: 14px;
-  }
-  
-  .signin {
-    text-align: center;
-  }
-  
-  .signin a {
-    color: royalblue;
-  }
-  
-  .signin a:hover {
-    text-decoration: underline royalblue;
-  }
-  
-  .flex {
-    display: flex;
-    width: 100%;
-    gap: 6px;
-  }
-  
-  .form label {
-    position: relative;
-  }
-  
-  .form label .input {
-    width: 100%;
-    padding: 10px 10px 20px 10px;
-    outline: 0;
-    border: 1px solid rgba(105, 105, 105, 0.397);
-    border-radius: 10px;
-  }
-  
-  .form label .input + span {
-    position: absolute;
-    left: 10px;
-    top: 15px;
-    color: grey;
-    font-size: 0.9em;
-    cursor: text;
-    transition: 0.3s ease;
-  }
-  
-  .form label .input:placeholder-shown + span {
-    top: 15px;
-    font-size: 0.9em;
-  }
-  
-  .form label .input:focus + span,.form label .input:valid + span {
-    top: 30px;
-    font-size: 0.7em;
-    font-weight: 600;
-  }
-  
-  .form label .input:valid + span {
-    color: green;
-  }
-  
-  .submit {
-    border: none;
-    outline: none;
-    background-color: royalblue;
-    padding: 10px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 16px;
-    transform: .3s ease;
-  }
-  
-  .submit:hover {
-    background-color: rgb(56, 90, 194);
-  }
-  
-  @keyframes pulse {
-    from {
-      transform: scale(0.9);
-      opacity: 1;
-    }
-  
-    to {
-      transform: scale(1.8);
-      opacity: 0;
-    }
-  }
+}
