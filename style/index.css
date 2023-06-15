@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .login-box {
@@ -24,7 +24,7 @@
   .login-box .user-box input {
     width: 100%;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 14pt;
     color: #fff;
     margin-bottom: 30px;
     border: none;
@@ -38,7 +38,7 @@
     top: 0;
     left: 0;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 14pt;
     color: #fff;
     pointer-events: none;
     transition: .5s;
@@ -46,10 +46,10 @@
   
   .login-box .user-box input:focus ~ label,
   .login-box .user-box input:valid ~ label {
-    top: -20px;
+    top: -30px;
     left: 0;
     color: #bdb8b8;
-    font-size: 12px;
+    font-size: 14pt;
   }
   
   .login-box form a {
@@ -70,27 +70,14 @@
     background: #fff;
     color: #000;
     border-radius: 5px;
-    box-shadow: 0 0 5px #fff,
-                0 0 25px #fff,
-                0 0 50px #fff,
-                0 0 100px #fff;
+
   }
   
   .login-box a span {
     position: absolute;
     display: block;
   }
-  
-  @keyframes btn-anim1 {
-    0% {
-      left: -100%;
-    }
-  
-    50%,100% {
-      left: 100%;
-    }
-  }
-  
+
   .login-box a span:nth-child(1) {
     bottom: 2px;
     left: -100%;
