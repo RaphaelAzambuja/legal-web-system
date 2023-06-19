@@ -6,189 +6,286 @@
     
     <link rel="stylesheet" href="../style/main.css">
     <link rel="shortcut icon" href="../midia/favicon.png" type="image/x-icon">
-
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    
+
     <title>LegalWebSystem</title>
 </head>
 <body>
     <!--MODAL ==================================================================================-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Adicionar processo</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                
-                <div class="modal-body"> 
-                <!--MODAL FORM =================================================================-->
-                    <form class="form">
-                        <label>
-                            <input required="" placeholder="" type="text" class="input">
-                            <span>Autor</span>
-                        </label> 
-                                
-                        <label>
-                            <input required="" placeholder="" type="text" class="input">
-                            <span>Réu</span>
-                        </label> 
-                        
-                        <label>
-                            <input required="" placeholder="" type="text" class="input">
-                            <span>Classe</span>
-                        </label>
-
-                        <label>
-                            <input required="" placeholder="" type="text" class="input">
-                            <span>Localidade</span>
-                        </label>
-
-                        <label>
-                            <input required="" placeholder="" type="text" class="input">
-                            <span>Valor da causa</span>
-                        </label>
-
-                        <label>
-                            <input required="" placeholder="" type="text" class="input">
-                            <span>N°Processo</span>
-                        </label>
-                    </form>
-                </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
-                    </div>
-                </div>
-
-            </div>
-        </div>    
-    </div>
-
-    <!--NAVBAR==========================================================================================================-->
-    <nav class="navbar navbar-expand-lg" style="background-color: #005A6F;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="../midia/favicon.png" style="width: 3rem;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-          
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
             
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffffff;">José Pereira</a>
-
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Perfil</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="../index.html">Sair</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: #ffffff;" href="./main.html">Índice</a>
-                    </li>
-                </ul>
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Adicionar processo</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-        </div>
-    </nav>    
-    <!--CONTENT ===============================================================================================-->
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="main-box">
-                    <div class="content-box">
-                        <div class="content-header-box">
+            
+            <div class="modal-form">
+
+                <div class="modal-body"> 
+                    <!--MODAL FORM =================================================================-->
+                    <form class="form sus">
+                        <h4>Cliente</h4>
+                        
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Nome</span>
+                    </label> 
+                    
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>CPF</span>
+                    </label> 
+                    
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>RG</span>
+                    </label> 
+                    
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Data de nascimento</span>
+                    </label> 
+                    
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Telefone</span>
+                    </label> 
+
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Email</span>
+                    </label> 
+                    
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Endereço</span>
+                    </label> 
+                    
+                    <hr>
+                    <h4>Processo</h4>
+                    
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Autor</span>
+                    </label> 
                             
-                            <!-- TOP-HEADER-BOX ==================================================================== -->
-                            <div class="top-header-box">
-                                <div class="left-box">
-                                    <h2>Lista de processos</h2>
-                                </div>
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Réu</span>
+                    </label> 
+                    
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Classe</span>
+                    </label>
+                    
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Localidade</span>
+                    </label>
+                    
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Valor da causa</span>
+                    </label>
+                    
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>N°Processo</span>
+                    </label>
+                    
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>N°Processo</span>
+                    </label>
+                    
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Natureza da causa</span>
+                    </label>
+                    
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>valor aproximado da causa</span>
+                    </label>
+                    
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>valor aproximado da causa</span>
+                    </label>
+                    
+                    <label>
+                        <textarea cols="42" rows="3" placeholder="Resumo dos fatos"></textarea>
+                    </label>
+
+                    <input type="file" name="archive[]" value="sus" multiple="multiple">
+                </div>
+                    
+                </form>
+            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+
+        </div>
+    </div>    
+</div>
+
+<!--NAVBAR==========================================================================================================-->
+<nav class="navbar navbar-expand-lg" style="background-color: #005A6F;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../midia/favicon.png" style="width: 3rem;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffffff;">José Pereira</a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Perfil</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="../index.html">Sair</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #ffffff;" href="./main.html">Índice</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>    
+<!--CONTENT ===============================================================================================-->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="main-box">
+                <div class="content-box">
+                    <div class="content-header-box">
+                        
+                        <!-- TOP-HEADER-BOX ==================================================================== -->
+                        <div class="top-header-box">
+                            <div class="left-box">
+                                <h2>Lista de processos</h2>
+                            </div>
+                            
+                            <div class="right-box">
+                                <form role="search">
+                                    <div class="search-box">
+                                        <input type="search" class="input" placeholder="Procurar..." >
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                    </div>
+                                </form>
                                 
-                                <div class="right-box">
-                                    <form role="search">
-                                        <div class="search-box">
-                                            <input type="search" class="input" placeholder="Procurar..." >
-                                            <i class="fa-solid fa-magnifying-glass"></i>
-                                        </div>
-                                    </form>
-                                    
-                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Adicionar processo</button>
-                                </div>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Adicionar processo</button>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="list-box">
-                            <table id="example" class="table table-striped" style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th>Autor 2195;</th>
-                                        <th>Réu</th>
-                                        <th>Classe</th>
-                                        <th>Localidade</th>
-                                        <th>Valor causa</th>
-                                        <th>N°Processo</th>
-                                        <th>Fixado</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Maria.Garcia</td>
-                                        <td>João.Almeida</td>
-                                        <td>...</td>
-                                        <td>São Paulo</td>
-                                        <td>R$7.000.00</td>
-                                        <td>5010123-68.2021.8.24.0004</td>
-                                        <td>
-                                            <label class="ui-bookmark">
-                                                <input type="checkbox">
-                                                <div class="bookmark">
-                                                  <svg viewBox="0 0 32 32">
-                                                    <g>
-                                                      <path d="M27 4v27a1 1 0 0 1-1.625.781L16 24.281l-9.375 7.5A1 1 0 0 1 5 31V4a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4z"></path>
-                                                    </g>
-                                                  </svg>
-                                                </div>
-                                              </label>
-                                        </td>
-
-                                    <tr>
-                                        <td>Daniel.Molo</td>
-                                        <td>Jailson.Mendes</td>
-                                        <td>...</td>
-                                        <td>Rio Grande do Sul</td>
-                                        <td>R$29.000.00</td>
-                                        <td>4867390-19.2021.8.24.0009</td>
-                                        <td>
-                                            <label class="ui-bookmark">
-                                                <input type="checkbox">
-                                                <div class="bookmark">
-                                                  <svg viewBox="0 0 32 32">
-                                                    <g>
-                                                      <path d="M27 4v27a1 1 0 0 1-1.625.781L16 24.281l-9.375 7.5A1 1 0 0 1 5 31V4a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4z"></path>
-                                                    </g>
-                                                  </svg>
-                                                </div>
-                                              </label>
-                                        </td>
-                                    </tr>
+                    <div class="list-box">
+                        <table id="example" class="table table-striped" style="width:100%">
+                            <thead>
+                                <tr>
                                     
-                                </tbody>
-                            </table>
-                        </div>
+                                    <th>Autor</th>
+                                    <th>Réu</th>
+                                    <th>Classe</th>
+                                    <th>Localidade</th>
+                                    <th>Valor causa</th>
+                                    <th>N°Processo</th>
+                                    <th>Fixado</th>
+                                    <th style="color: #ffffff;"></th>
+                                    <th style="color: #ffffff;"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maria.Garcia</td>
+                                    <td>João.Almeida</td>
+                                    <td>...</td>
+                                    <td>São Paulo</td>
+                                    <td>R$7.000.00</td>
+                                    <td>5010123-68.2021.8.24.0004</td>
+                                    <td>
+                                        <label class="ui-bookmark">
+                                            <input type="checkbox">
+                                            <div class="bookmark">
+                                                <svg viewBox="0 0 32 32">
+                                                <g>
+                                                    <path d="M27 4v27a1 1 0 0 1-1.625.781L16 24.281l-9.375 7.5A1 1 0 0 1 5 31V4a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4z"></path>
+                                                </g>
+                                                </svg>
+                                            </div>
+                                            </label>
+                                    </td>
+                                    <td><i class="fa-solid fa-pen-to-square"></i></td>
+                                    <td><i class="fa-sharp fa-solid fa-trash"></i></td>
+
+                                <tr>
+                                    <td>Daniel.Molo</td>
+                                    <td>Jailson.Mendes</td>
+                                    <td>...</td>
+                                    <td>Rio Grande do Sul</td>
+                                    <td>R$29.000.00</td>
+                                    <td>4867390-19.2021.8.24.0009</td>
+                                    <td>
+                                        <label class="ui-bookmark">
+                                            <input type="checkbox">
+                                            <div class="bookmark">
+                                                <svg viewBox="0 0 32 32">
+                                                <g>
+                                                    <path d="M27 4v27a1 1 0 0 1-1.625.781L16 24.281l-9.375 7.5A1 1 0 0 1 5 31V4a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4z"></path>
+                                                </g>
+                                                </svg>
+                                            </div>
+                                            </label>
+                                    </td>
+                                    <td><i class="fa-solid fa-pen-to-square"></i></td>
+                                    <td><i class="fa-sharp fa-solid fa-trash"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Daniel.Molo</td>
+                                    <td>Jailson.Mendes</td>
+                                    <td>...</td>
+                                    <td>Rio Grande do Sul</td>
+                                    <td>R$29.000.00</td>
+                                    <td>4867390-19.2021.8.24.0009</td>
+                                    <td>
+                                        <label class="ui-bookmark">
+                                            <input type="checkbox">
+                                            <div class="bookmark">
+                                                <svg viewBox="0 0 32 32">
+                                                <g>
+                                                    <path d="M27 4v27a1 1 0 0 1-1.625.781L16 24.281l-9.375 7.5A1 1 0 0 1 5 31V4a4 4 0 0 1 4-4h14a4 4 0 0 1 4 4z"></path>
+                                                </g>
+                                                </svg>
+                                            </div>
+                                            </label>
+                                    </td>
+                                    <td><i class="fa-solid fa-pen-to-square"></i></td>
+                                    <td><i class="fa-sharp fa-solid fa-trash"></i></td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
     
 
     <footer class="w-100 bottom-0 pad text-center text-white" style="background-color: #005A6F;">
